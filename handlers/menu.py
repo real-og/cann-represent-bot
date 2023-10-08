@@ -7,11 +7,16 @@ from states import State
 
 @dp.message_handler(state=State.choosing_lan)
 async def send_welcome(message: types.Message, state: FSMContext):
-    lan = message.text
-    if lan in [texts.en_btn, texts.ru_btn]:
-        await state.update_data(lan=lan)
-    await message.answer(texts.menu)
-    await message.answer(texts.finger_down, reply_markup=kb.menu_kb)
-    await State.menu.set()
-
-    
+    lang = message.text
+    if lang in [texts.en_btn, texts.ru_btn]:
+        await state.update_data(lang=lang)
+        if lang == texts.en_btn:
+            await message.answer(texts.menu_en)
+            await message.answer(texts.finger_down, reply_markup=kb.menu_en_kb)
+        elif lang == texts.ru_btn:
+            await message.answer(texts.menu_ru)
+            await message.answer(texts.finger_down, reply_markup=kb.menu_ru_kb)
+        await State.menu.set()
+    else:
+        await message.answer(texts.welcome)
+        await message.answer(texts.finger_down, reply_markup=kb.choose_lan_kb)
