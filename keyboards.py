@@ -18,14 +18,14 @@ menu_en_kb = ReplyKeyboardMarkup([[texts.text_en_btn, texts.video_en_btn],
                                      resize_keyboard=True,)
 
 texts_kb = InlineKeyboardMarkup(row_width=1)
-texts_kb.add(InlineKeyboardButton(texts.text1, callback_data='1'))
+# texts_kb.add(InlineKeyboardButton(texts.text1, callback_data='1'))
 texts_kb.add(InlineKeyboardButton(texts.text2, callback_data='2'))
 texts_kb.add(InlineKeyboardButton(texts.text3, callback_data='3'))
 texts_kb.add(InlineKeyboardButton(texts.text4, callback_data='4'))
 texts_kb.add(InlineKeyboardButton(texts.text5, callback_data='5'))
 
 texts_en_kb = InlineKeyboardMarkup(row_width=1)
-texts_en_kb.add(InlineKeyboardButton(texts.text1_en, callback_data='11'))
+# texts_en_kb.add(InlineKeyboardButton(texts.text1_en, callback_data='11'))
 texts_en_kb.add(InlineKeyboardButton(texts.text2_en, callback_data='22'))
 texts_en_kb.add(InlineKeyboardButton(texts.text3_en, callback_data='33'))
 texts_en_kb.add(InlineKeyboardButton(texts.text4_en, callback_data='44'))
