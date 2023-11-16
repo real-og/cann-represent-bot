@@ -46,7 +46,7 @@ videos_en_kb.add(InlineKeyboardButton(texts.video3_en, callback_data='33'))
 
 
 media_kb = InlineKeyboardMarkup(row_width=1)
-media_kb.add(InlineKeyboardButton(texts.inst, url='https://direct.smartsender.com/contacts/m:315088998/redirect?context=ZmI6MTM2MDAxOTM5&referer=315015063&continue=https%3A%2F%2Fwww.instagram.com%2Flocaltrade.cc%2F&random=1689'))
-media_kb.add(InlineKeyboardButton(texts.tg, url='https://direct.smartsender.com/contacts/m:315088998/redirect?context=ZmI6MTM2MDAxOTQy&referer=315015063&continue=https%3A%2F%2Ft.me%2Flocaltradecc&random=3423'))
-media_kb.add(InlineKeyboardButton(texts.fb, url='https://direct.smartsender.com/contacts/m:315088998/redirect?context=ZmI6MTM2MDAxOTQ1&referer=315015063&continue=https%3A%2F%2Fwww.facebook.com%2Flocaltrade.cc&random=7153'))
+media_kb.add(InlineKeyboardButton(texts.inst, url='https://instagram.com/cannabetrust'))
+media_kb.add(InlineKeyboardButton(texts.tg, url='https://t.me/CannabeChat'))
+media_kb.add(InlineKeyboardButton(texts.web, url='https://cannabetrust.com'))
 
