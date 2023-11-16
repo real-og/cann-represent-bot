@@ -9,6 +9,11 @@ from states import State
 async def send_channels(callback: types.CallbackQuery, state: FSMContext):
     data = await state.get_data()
     lang = data.get('lang')
+    if callback.data == '2':
+        with open('images/presentation.pdf', 'rb') as file:
+            await callback.message.answer_document(file)
+            await callback.answer()
+        return
     if lang == texts.en_btn:
         await callback.message.answer(texts.developing_eng)
     else:

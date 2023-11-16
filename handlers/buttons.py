@@ -11,7 +11,7 @@ async def send_welcome(message: types.Message, state: FSMContext):
     lang = data.get('lang')
     input = message.text
     if input == texts.text_btn:
-        with open('images/текст.jpg', 'rb') as photo:
+        with open('images/text_uk.jpg', 'rb') as photo:
             await message.answer_photo(photo, reply_markup=kb.texts_kb)
     elif input == texts.support_btn:
         with open('images/Сапорт.jpg', 'rb') as photo:
