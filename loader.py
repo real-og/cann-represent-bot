@@ -10,6 +10,10 @@ ADMIN_ID = str(os.environ.get('ADMIN_ID'))
 BOT_TOKEN = str(os.environ.get('BOT_TOKEN'))
 SHEET_LINK = str(os.environ.get('SHEET_LINK'))
 
+INST_LINK = "https://instagram.com/cannabetrust"
+TG_LINK = "https://t.me/CannabeChat"
+WEB_LINK = "https://cannabetrust.com"
+
 storage = RedisStorage2(db=1)
 # storage = MemoryStorage()
 
